@@ -18,6 +18,7 @@ struct Poems :Codable {
     let content: String
     let question: String
     let answer: String
+    let lens: Int
 }
 
 

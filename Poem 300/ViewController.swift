@@ -87,12 +87,16 @@ class ViewController: UIViewController {
         for buttons in choiceButtons {
             buttons.isEnabled = true
         }
-        
 
-            var semiAnswerSelection = dataSet
-            semiAnswerSelection.remove(at: index)
-            semiAnswerSelection.shuffle()
-            var finalAnswerSelection = semiAnswerSelection.prefix(3)
+        
+        var preAnswerSelection = poemsDataSet
+        if let correctAnswerIndex = preAnswerSelection.firstIndex(where: {$0.answer == dataSet[index].answer}) {
+            preAnswerSelection.remove(at: correctAnswerIndex)
+        }
+        let semiAnswerSelection = preAnswerSelection.filter {
+            $0.lens == dataSet[index].lens
+        }
+        var finalAnswerSelection = semiAnswerSelection.shuffled().prefix(3)
             finalAnswerSelection.append(dataSet[index])
             finalAnswerSelection.shuffle()
         
@@ -141,6 +145,7 @@ class ViewController: UIViewController {
         cloudPatternOnResult.alpha = 0.08
         cloudPatternOnFullPoem.alpha = 0.08
         
+        
     }
 
     
@@ -155,7 +160,6 @@ class ViewController: UIViewController {
         testStatusView.isHidden = false
         testProgressView.progress = Float(index)/10.0
         questionNumber.text = "第 \(index+1) 題"
-        
         
     }
     

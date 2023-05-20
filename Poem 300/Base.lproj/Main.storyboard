@@ -304,6 +304,10 @@
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="dBP-Ds-joZ"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hBg-Zq-aja" appends="YES" id="pdt-fp-rus"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -341,6 +345,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="hBg-Zq-aja">
+                    <connections>
+                        <action selector="hideFullPoem:" destination="BYZ-38-t0r" id="vW9-5M-oTr"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
         </scene>

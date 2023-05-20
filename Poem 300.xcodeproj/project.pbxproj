@@ -314,6 +314,7 @@
 				DEVELOPMENT_TEAM = 7WM9U7Y583;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Poem 300/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "詩三百";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -343,6 +344,7 @@
 				DEVELOPMENT_TEAM = 7WM9U7Y583;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Poem 300/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "詩三百";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
